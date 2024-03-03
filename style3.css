@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Micro 5", sans-serif;
+    font-size:35px;
+    box-sizing: border-box;
+
+}
+
+*,*::before *::after{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(#c4d6f6,#0b355b);
+    color: #fff;
+    margin:0;
+}
+
+#header{
+    
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 20px 10% ;
+}
+
+nav{
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    align-items: right;
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px 20px;
+}
+
+ nav ul li a{
+    color: #219ebc;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #219ebc;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+    opacity: 0.75;
+}
+.hero-conatiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+.wrapper{
+margin-left: auto;
+margin-right: auto;
+    text-align: right;
+}
+.var{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 50px  50px 40px;
+    
+}
+ 
+.text-box{
+    margin-top: 100px;
+    color:#fb8500;
+    text-align: left;
+}
+.text-box p{
+    margin: 0px  0 0px;
+    font-size: 50px;
+    color: #219ebc;
+}
+.text-box h1{
+    font-size: 100px;
+}
+.text-box p1{
+    margin: 10px  0 40px;
+    font-size: 50px;
+    color: #219ebc;
+}
+
+/*----------about--------*/
+
+#SKILLS{
+    padding: 150px 20px;
+    color:#023047;
+
+    background-size: cover;
+    background-position: center;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill-col-1{
+    flex-basis: 35%;
+    text-align: right;
+
+}
+.skill-col-1 img{
+    width: 300px;
+    height: auto;
+    margin: 50px  50px 40px;
+}
+
+.skill-col-2{
+    flex-basis: 60%;
+}
+
+.skill-col-2 h1{
+    color:#023047;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.skill-col-2 P{
+    margin: 10px  0 40px;
+    font-size: 50px;
+    color: #ffb703;
+}
+
+/*----------achievements--------*/
+
+
+#ACHIEVEMENTS{
+    padding: 80px 0;
+    color:#734bf8;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-col-2 h1{
+    color:#023047;
+    font-size: 90px;
+    font-weight: 600;
+}
+
+.carousel{
+    height: 100vh;
+    position: relative;
+}
+.carousel> ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide> img{
+    margin-top: 7%;
+    margin-left: 23%;
+    display: block;
+    width: 50%;
+    height: 75%;
+    object-position: center;
+}
+.slide[data-active]{
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.carousel-button{
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    top: 50%;
+    left: 55%;
+    right: 65%;
+    transform: translateY(-50%);
+    color:#023047;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    
+}
+
+.carousel-button:hover,
+.carousel-button:focus{
+    color: #ffb703;
+    transition: 0.5s;
+}
+
+.carousel-button.prev{
+    left: 1rem;
+}
+.carousel-button.next{
+    right: 1rem;
+}
+
+/*-----------------footer--------------*/
+
+footer{
+    background-image: url('images/waves.png');
+    background-size: cover;
+}
+
+.footercontainer{
+    padding: 70px 30px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-left p{
+    margin-top: 10px;
+}
+.contact-left p i{
+    color: #ffb703;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.sub-title{
+    margin-top: 250px;
+    font-size: 50px;
+    color:#219ebc;
+}
+
+.socialIcons{
+    margin: 20px;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffb703;
+    padding: 5px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.socialIcons a:hover{
+    color: #219ebc;
+    transform: translateY(-5px);
+}
+
+/*----------------responsive------------*/
+nav .fa{
+    display: none;
+}
+
+
+@media (max-width: 600px) and (max-width:900px){
+   
+    .hero-container{
+        justify-content: space-between;
+    }
+    .text-box{
+        font-size: 16px;
+    }
+    .text-box p1{
+        width: 150px;
+        font-size: 50px;
+        color: #219ebc;
+    }
+    .var{
+        background-image: url('images/me2.jpg');
+        display:flex;
+        height: auto;
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        
+    }
+    nav .fa{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #0b355b;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 200vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display:block;
+        margin: 25px;
+
+    }
+
+    nav ul .fa{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    #SKILLS{
+        margin-top: 100%;
+        padding: 10px 10px;
+        color:#734bf8;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .skill-col-1 img{
+        display: none;
+    }
+    
+    .skill-col-2{
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .skill-col-2 h1{
+        font-size: 60px;
+        font-weight: 600;
+    }
+    
+    .skill-col-2 P{
+        font-size: 35px;
+    }
+
+
+    .about-col-2 h1{
+        color:#023047;
+        font-size: 60px;
+        font-weight: 600;
+    }
+.carousel{
+    
+    height: 50vh;
+    position: relative;
+}
+
+.slide> img{
+    margin-top: 0;
+    margin-left: 55px;
+    display: block;
+    width: 70%;
+    height: 75%;
+    object-position: center;
+}
+.carousel-button{
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    top: 40%;
+    left: 270px;
+    right: 1000px;
+    transform: translateY(-50%);
+    color:#1d4a77;
+    cursor: pointer;
+    border-radius: 0.1rem;
+    padding: 0.5rem;
+    
+}
+
+footer{
+    background-image: url('images/waves.png');
+    background-size: cover;
+}
+
+.sub-title{
+    margin-top: 250px;
+    font-size: 50px;
+    color:#219ebc;
+}
+
+.socialIcons{
+    margin: 10px;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffb703;
+    padding: 0px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+}
+
+@media (min-width:1200px){
+    .text-box p1{
+        width: 250px;
+        height: 250;
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/varsha.png" class="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#header">HOME</a></li>
+                    <li> <a href="#SKILLS">SKILLS</a></li>
+                    <li> <a href="#ACHIEVEMENTS">ACHIEVEMENTS</a></li>
+                    <li> <a href="#CONTACT">CONTACT</a></li>
+                    <i class="fa fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+            </nav>
+<div class="hero-conatiner">
+    <div class="text-box">
+        <p>HI! I AM</p>
+        <h1>VARSHA SHAW</h1>
+        <p> A FIRST YEAR STUDENT OF <br>COMPUTER SCIENCE AND ENGINEERING AT NIT DURGAPUR.
+        </p>
+    </div>
+    <div class="wrapper">
+        <img src="images/meee.jpg" class="var">
+    </div>
+</div>
+        </div>
+    </div>
+    <!-----------skill---------->
+    <div id="SKILLS">
+        <div class="container">
+            <div class="row">
+                <div class="skill-col-1">
+                    <img src="images/skill.png" class="me" width="300">
+                </div>
+                <div class="skill-col-2">
+                    <h1>SKILLS</h1>
+                    <P>PYTHON (PROGRAMMING LANGUAGE) <br> C (PROGRAMMING LANGUAGE) <br> MySQL <br> WEB DEVELOPMENT</P>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------achievements---------->
+    <section aria-label="Newest Photos">
+    <div id="ACHIEVEMENTS">
+        <div class="container">
+            <div class="about-col-2">
+                <h1>ACHIEVEMENTS</h1>
+            </div>
+        </div>
+    
+    <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+    <ul data-slides>
+        <li class="slide" data-active>
+            <img src="images/cert1.png" alt="img1">
+
+        </li>
+        <li class="slide" >
+            <img src="images/cert2.png" alt="img2">
+
+        </li>
+        <li class="slide">
+            <img src="images/cert3.png" alt="img3">
+
+        </li>
+    </ul>
+</div>
+</div>
+</section>
+<!---------------footer----------------->
+<footer>
+<div id="CONTACT">
+<div class="footercontainer">
+    <div class="row">
+    
+        <div class="contact-left">
+            <h1 class="sub-title">CONTACT ME </h1>
+            <p style="color: #ffb703;"> <i class="fa-regular fa-envelope"></i>shawvarsha004@gmail.com</p>
+            <p style="color: #ffb703;"><i class="fa-solid fa-phone"></i>+91-8910849073</p>
+            <div class="socialIcons">
+                <a href="https://www.instagram.com/varshahalol._/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/varsha-shaw-443427282/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="footerNav">
+        <div class="footerbottom">
+            <p>CopyRight &copy;2024; Designed by <span class="designer"> Varsha</span></p>
+        </div>
+    </div>
+</div>
+</div>
+</footer>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right= "0";
+    }
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }
+</script>
+</body>
+</html>
+
